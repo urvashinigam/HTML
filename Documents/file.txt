@@ -1,0 +1,386 @@
+
+
+TechLog360
+
+    Technology
+    Security
+    Gadgets
+    Android Tweaks
+    Learn
+
+More
+Home Learn Did You Know ? 20 Basic Ubuntu Commands And Terminal Shortcuts Every Beginner Must Know
+
+    LearnDid You Know ?TechnologyProgramming
+
+20 Basic Ubuntu Commands And Terminal Shortcuts Every Beginner Must Know
+By
+Sabarinath -
+Last Updated: April 23, 2022 30
+Basic Ubuntu commands and Terminal shortcuts
+
+If you are Ubuntu newbie, then this post about basic Ubuntu commands is going to help you to get familiar with the Terminal emulator.
+
+As we all know, Ubuntu is one of the most customizable Linux distribution available today. In fact, when we heard Linux, the first thing came to our would-be Ubuntu. Almost every Linux enthusiast start with Ubuntu when they enter the Linux world, as it’s one of the chosen Linux distros for beginners.
+
+And this post is for those Ubuntu beginners. Here we are going to list some important basic Ubuntu commands every beginner must know.
+
+I think Ubuntu’s incredible flexibility is due mainly to its powerful shell, which is at the core of all Linux variants. Through the user-friendly “Terminal” interface, you can easily interact with this shell using a wide variety of commands.
+
+Ubuntu uses BASH as its default shell and there are a lot of bash commands — that confuses every Ubuntu beginners. But you don’t have to learn all these bash commands if you want to familiar with Ubuntu Terminal in your early Linux days. Else you only have to understand basic Ubuntu commands which will help you to do some basic operations. Unlike CMD commands on Windows, here on Ubuntu and other Linux distros we use commands to do most of our tasks.
+
+So to do this task easier, here are the most basic starters Ubuntu commands and some Terminal shortcuts, that will help you to execute commands more quickly, to ease up your Linux journey.
+
+Contents
+Basic Ubuntu Commands for Beginner:
+1. sudo
+
+sudo (SuperUser DO) Linux command allows you to run programs or other commands with administrative privileges, just like “Run as administrator” in Windows. This is useful when, for example, you need to modify files in a directory that your user wouldn’t normally have access to.
+2. apt-get
+
+apt-get is the one of the most important Ubuntu commands every beginner must know. It is used to install, update, upgrade and remove any package. apt-get basically works on a database of available packages. Here is the list of different apt-get commands:
+1. sudo apt-get update
+
+apt-get update with super user privileges is the first command you need to run in any Linux system after a fresh install. This command updates the database and let your system know if there are newer packages available or not.
+sudo apt-get update - Basic Ubuntu Commands
+2. sudo apt-get upgrade
+
+After updating the package database, next step is to to upgrade the installed packages. For upgrading all the packages with available updates you can use this command.
+
+And if you like to upgrade a particular package, you should tweak the above command a little:
+
+sudo apt-get upgrade <package-name>
+
+Replace the <package-name> with your desired package.
+sudo apt-get upgrade - Basic Ubuntu Commands
+3. sudo apt-get install
+
+If you know the name of the package, then you can easily install a program using this command:
+
+sudo apt-get install <package-name> 
+
+Replace the <package-name> with your desired package.
+sudo apt-get install - Basic Ubuntu Commands
+
+If you are not sure about the package name, you can type a few letters and press tab and it will suggest all the packages available with those letters. Thanks for auto-completion feature.
+4. sudo apt-get remove
+
+When it comes to removing the installed program apt-get remove command suits your need. You only have to know the exact package name of the software you want to uninstall.
+
+If you don’t know the package name, use below ubuntu basic command to list all the packages installed on your system and then copy the package name from the list:
+
+dpkg --list
+
+Now run the apt-get remove command as sudo in order to remove the software:
+
+sudo apt-get remove <package-name>
+
+Replace the <package-name> with the one you copied from the dpkg list.
+sudo apt-get remove - Basic Ubuntu Commands
+
+apt-get remove command only removes the software from your system but not the configuration or data files of the package. These files help in keeping the same settings when you want to reinstall the same software.
+5. sudo apt-get purge
+
+apt-get purge command is used when you want to remove a software completely from your system with its configuration or data files so that no longer personalized settings will be available during reinstallation.
+
+Run the apt-get purge command as sudo in order to remove the software completely:
+
+sudo apt-get purge <package-name>
+
+Replace the <package-name> with the application that you want to remove or copied from the dpkg list.
+sudo apt-get purge - Basic Ubuntu Commands
+6. sudo apt-get autoremove
+
+apt-get autoremove command is used to remove any unnecessary packages. Unnecessary means, whenever you install an application, the system will also install the software that this application depends on. It is common in Ubuntu that applications share the same libraries. When you remove the application the dependency will stay on your system.
+
+So run apt-get autoremove as sudo after uninstalling a package to remove unwanted software dependencies.
+sudo apt-get autoremove - Basic Ubuntu Commands
+
+So apt-get autoremove will remove those dependencies that were installed with applications and that are no longer used by anything else on the system.
+3. ls
+
+ls (list) command lists all files and folders in your current working directory. You can also specify paths to other directories if you want to view their contents.
+4. cd
+
+cd (change director”) Linux command also known as chdir used to change the current working directory. It’s one of the most used basic Ubuntu commands. Using this command is easy, just type cd followed by the the folder name. You can use full paths to folders or simply the name of a folder within the directory you are currently working. Some common uses are:
+
+    cd /  – Takes you to the root directory.
+    cd .. – Takes you up one directory level.
+    cd –  – Takes you to the previous directory.
+
+Here are some examples to how to use cd command in Ubuntu:
+
+Example 1: cd home – open home folder in current directory.
+
+Example 2: cd Linux\ Drive – open Linux Drive named folder in directory. Here you can see I use backslash because the folder name has spaces so for each space you use “backslash+space”. Like, if your folder name is “am a programmer” then the cd command will be, “cd am\ a\ programmer”.
+cd - Basic Ubuntu Commands
+5. pwd
+
+pwd (print working directory) Ubuntu command displays the full pathname of the current working directory.
+6. cp
+
+cp (copy) Linux command allows you to copy a file. You should specify both the file you want to be copied and the location you want it copied to – for example, cp xyz /home/myfiles would copy the file “xyz” to the directory “/home/myfiles”.
+7. mv
+
+mv (move) command allows you to move files. You can also rename files by moving them to the directory they are currently in, but under a new name. The usage is the same as cp – for example mv xyz /home/myfiles would move the file “xyz” to the directory “/home/myfiles”.
+8. rm
+
+rm (remove) command removes the specified file.
+
+    rmdir (“remove directory”) – Removes an empty directory.
+    rm -r (“remove recursively”) – Removes a directory along with its content.
+
+9. mkdir
+
+mkdir (make directory) command allows you to create a new directory. You can specify where you want the directory created – if you do not do so, it will be created in your current working directory.
+10. history
+
+history command displays all of your previous commands up to the history limit.
+history - Basic Ubuntu Commands
+11. df
+
+df (display filesystem) command displays information about the disk space usage of all mounted filesystems.
+df - Basic Ubuntu Commands
+12. du
+
+du (directory usage) command displays the size of a directory and all of its subdirectories.
+13. free
+
+free – Displays the amount of free space available on the system.
+14. uname -a
+
+uname -a – Provides a wide range of basic information about the system.
+15. top
+
+top – Displays the processes using the most system resources at any given time. “q” can be used to exit.
+16. man
+
+man command displays a “manual page”. Manual pages are usually very detailed, and it’s recommended that you read the man pages for any command you are unfamiliar with. Some uses are :
+
+    man man – Provides information about the manual itself.
+    man intro – Displays a brief introduction to Linux commands.
+
+17. info
+
+Similar to man, but often provides more detailed or precise information.
+18. <command name> -h or <command name> –help
+
+This command is a third alternative to get help. While not as detailed as the info or man pages, this will provide a quick overview of the command and its uses.
+
+For example: man -h or man -help
+19. passwd
+
+passwd Ubuntu basic command is used to change user password using Terminal. What you have to do is run the below command, where is the username whose password has to change:
+
+passwd <user>
+
+20. whatis
+
+whatis command shows a brief description of what is the functionality of specific built-in Linux command.
+
+whatis <command>
+
+Some examples are:
+
+    whatis cd
+    whatis man
+    whatis help
+
+Above commands will display the purpose of cd, man and help commands.
+Ubuntu Terminal Shortcuts:
+
+To further ease up your skill, these Ubuntu Terminal keyboard shortcuts would help.
+Ubuntu Terminal Shortcuts	Function
+Ctrl + Shift + T	Open new tab on current terminal
+Ctrl + Shift + W	Close the current tab
+Ctrl + A	Move cursor to beginning of line
+Ctrl + E	Move cursor to end of line
+Ctrl + U	Clears the entire current line
+Ctrl + K	Clears the command from the cursor right
+Ctrl + W	Delete the word before the cursor
+Ctrl + R	Allows you to search your history for commands matching what you have typed
+Ctrl + C	Kill the current process
+Ctrl + Z	Suspend the current process by sending the signal SIGSTOP
+Ctrl + L	Clears the terminal output
+Alt + F	Move forward one word
+Alt + B	Move backward one word
+Ctrl + Shift + C	Copy the highlighted command to the clipboard
+Ctrl + Shift + V or Shift + Insert	Paste the contents of the clipboard
+Up/Down Arrow keys	To scroll through your command history, allowing you to quickly execute the same command multiple times
+TAB	Used to complete the command you are typing. If more than one command is possible, you can press it multiple times to scroll through the possible completions. If a very wide number of commands are possible, it can output a list of all possible completions.
+Share
+30 COMMENTS
+
+    Masoori July 17, 2016 At 4:06 pm
+
+    good one…thank you
+    Reply
+    Nitin June 17, 2018 At 2:16 pm
+
+    Vry interesting post ! I like it !
+    Reply
+    blackspidey June 28, 2018 At 9:51 am
+
+    thank you very useful post.
+    Reply
+    Jevichi Ezpal August 3, 2018 At 7:03 pm
+
+    Thank you so much. Bookmarked. Am an Ubuntu beginner and hopes it may help me to start my Terminal lessons….
+    Reply
+    Mitra Yuktha August 10, 2018 At 12:50 am
+
+    Please post full list of Linux commands pdf like you done with Kali and CMD.
+    Reply
+    Wreek September 29, 2018 At 9:20 pm
+
+    You forgot to add nano.
+    Reply
+    Lalit Sharma November 18, 2018 At 1:32 pm
+
+    I’ve recently switched to cloudways from siteground and this list of basic SSH terminal commands are proven very helpful to me. thanks for the list, Sabarinath.
+    Reply
+    Perkone January 24, 2019 At 3:38 am
+
+    It is very useful! Thanks!
+    Reply
+    SSS March 30, 2019 At 3:51 pm
+
+    Thank you, useful info
+    Reply
+    Majeed Mohammed April 6, 2019 At 11:43 am
+
+    Thanks
+    Reply
+    evarest May 2, 2019 At 1:06 am
+
+    Very usefully, thank you for the content.
+    Reply
+    Fazal Karim October 3, 2019 At 2:14 pm
+
+    much helpful! thanks
+    Reply
+    Rishabh Singh October 20, 2019 At 3:18 pm
+
+    just keep posting these types of valuable stuff. thanks.
+    Reply
+    Dheeraj October 26, 2019 At 1:01 pm
+
+    Thanks for this great tutorial .If do you have more commands please share with us.
+    Reply
+    Neel Save November 24, 2019 At 8:37 am
+
+    Thank you so much
+    Reply
+    chunnu January 21, 2020 At 11:42 am
+
+    maze aa gaye
+    Reply
+    rifkican February 23, 2020 At 2:20 am
+
+    Thanks for this great tutorial
+    Reply
+    Prabhusekar March 5, 2020 At 3:22 pm
+
+    Superb great work ..i have one more doubt i need to install TP link wirless adapter in UBUNTU without internet ,whether this can be done thru downloadable file..if so can u pls help to solve this issue
+    Reply
+    Curt Lackey March 11, 2020 At 11:55 am
+
+    This was really helpful!!! Thanks
+    Reply
+    asi ali March 13, 2020 At 12:35 pm
+
+    thanks for sharing this informations
+    Reply
+    maruthimarella April 12, 2020 At 6:02 pm
+
+    Thank you for sharing useful content to me in simple manner
+    Reply
+    E. Kamondo May 13, 2020 At 3:44 pm
+
+    Thanks for a straightforward tutorial.
+    Reply
+    creator June 3, 2020 At 4:52 pm
+
+    I get very powerful information on this website related to ubuntu. please sendings more basic commands of ubuntu. because I’m a newbie on ubuntu. I have started ubuntu, therefore, I should more information related to ubuntu commands. please sending more and more commands related to ubuntu. Thank you
+    Reply
+    noobuntu user x July 24, 2020 At 2:39 am
+
+    I am brand spanking new to Linux and need an even more basic intro than what is presented here. For instance: what is a “package”? I have a good mind for programming (I pick it up easily, and it makes sense to me-I took a C++ course long long long ago), but have very little practical knowledge. I know what I want to do, but am having a hard time finding a resource for Ubuntu beginners that literally starts at the ground floor. I have slightly more than average know-how with windows computers (I know how to look for, search, and change directories from “command line”), can anyone point me to a good resource to get started? Thanks!
+    Reply
+    Badar muneer January 26, 2021 At 8:06 pm
+
+    thanks a bunch
+    Reply
+    Sajid Rasheed Ogahi February 27, 2021 At 11:30 am
+
+    Thanks a lot it helped me a lot
+    Reply
+    wr19 March 18, 2021 At 5:33 pm
+
+    thanks alot, btw how to unzip file in ubuntu?
+    Reply
+    Swedha June 1, 2021 At 12:43 pm
+
+    Thank u sir
+    Reply
+    harshita verma January 19, 2022 At 6:03 pm
+
+    thank you so much sir it helped me a lot
+    Reply
+    VIKASH KUMAR June 22, 2022 At 4:17 pm
+
+    Thanks
+    Reply
+
+LEAVE A REPLY
+
+Save my name, email, and website in this browser for the next time I comment.
+
+This site uses Akismet to reduce spam. Learn how your comment data is processed.
+Recent Stories:
+0
+FBI: Fraudsters Use Deepfakes And Stolen Personal Data To Get Remote IT Jobs
+Bhasker Dev - July 1, 2022
+0
+Immortalis-G715: ARM Unveils Its First Mobile GPU With Hardware-Based Ray Tracing
+Sabarinath - June 30, 2022
+0
+Mojo Lens: AR Smart Contact Lenses Tested On Humans For The First Time
+Adwaith - July 1, 2022
+0
+Samsung Gaming Hub: Play Xbox, Stadia, GeForce Now And Other Cloud Services From Your...
+Vishak - July 2, 2022
+0
+Apple Co-Founder Steve Jobs Posthumously Honored With The Presidential Medal Of Freedom
+Anusha Asokan - July 3, 2022
+Apps World
+Unique Android Launcher
+18 Best free unique Launchers for Android (updated 2022)
+Vishak - January 9, 2022
+Who doesn't love to customize their Android smartphone and make it look more beautiful and elegant? Android is a highly flexible and customizable mobile...
+Best Android Root Apps
+28 Best Root Apps For Android (updated 2022)
+April 23, 2022
+How to find all the apps you've ever installed on your Android phone
+How to find all the apps you’ve ever installed on your...
+August 11, 2016
+Apple Third-Party Payment Option in App store
+Skipping The 30% Commission Of The App Store: Apple Allows Some...
+April 1, 2022
+Google Look to Speak App
+Google Look to Speak App Allows You To ‘Talk’ Using The...
+December 19, 2020
+Mind Mapping Apps
+8 Best Mind Mapping Apps For Android And iOS To Visualize...
+December 31, 2021
+Android 13 Will Block Permissions For Dangerous Apps
+Android 13 Will Block Permissions For Apps That It Considers ‘Abusive’
+May 7, 2022
+undo send gmail for Android
+Now you can undo send email in Gmail for Android
+August 22, 2018
+
+    About UsPrivacy PolicyCookie PolicyDisclaimerContact UsOur Team
+
+© 2022 TechLog360 - All rights reserved.
+
