@@ -1,0 +1,20 @@
+.center    {
+    width: 300px;
+    border: 15px solid green;
+    padding: 50px;
+    margin: 20px;
+  }
+  div{
+     
+    margin-top: 40px;
+border: 10px solid #a52a75;
+padding: 20px;
+align-content: center;
+box-sizing: content-box;
+  }
+  p{
+    outline-offset: 30px;
+    outline: 12px solid blue;
+    padding: 20px;
+    border: 12px solid red;
+  }

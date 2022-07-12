@@ -1,0 +1,127 @@
+<!-- css syntax -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS PRACTICE</title>
+    <style>
+        #idwork {
+            text-align: center;
+            color: aqua;
+
+        }
+
+        /* CSS property for * selector  */
+        /* *{
+        
+            background-color: bisque;
+            margin-block-start: 20px;      
+          } */
+        .classwork {
+            color: brown;
+            font-style: oblique;
+            background-color: cyan;
+        }
+
+        h3 {
+            color: rgb(43, 226, 165);
+            text-shadow: black;
+        }
+
+        .button {
+            color: darkgrey;
+        }
+
+        h4:hover {
+            color: white;
+            background-color: green;
+        }
+        .highlightdiv{
+            color: olive;
+            height: 30px;
+            width: 44cm;
+
+        }
+        
+
+        h2:hover+.highlightdiv{
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- id selector -->
+    <h1 id="idwork">Hello World Happy world</h1>
+
+    <!-- class selctor -->
+    <h1 class="classwork">Hello class Work</h1>
+    <h3>h3 hadder css work examples</h3>
+
+
+    <form>
+        <div>
+            Name: <input type="text" name="text">
+            <div>
+                Age : <input type="text" name="age">
+            </div>
+            <div>
+                time: <input type="time">
+            </div>
+        </div>
+        <div>
+            gender: <input type="checkbox" name="gender">
+            <label>female</label>
+            <input type="checkbox" name="female" id="">
+            <label>male</label>
+            <input type="checkbox" name="male" id="">
+        </div>
+        <button>Submit </button>
+
+    </form>
+
+    <div>
+        <h4 style="text-align: center;">hover it</h4>
+
+    </div>
+
+
+    <!-- div hover -->
+    
+        <h2 style="text-align:center;">On click div show </h2>
+        <div class="highlightdiv">
+            hello the text inside the div..... 
+        </div>
+
+
+    <br>click
+
+    <ul>
+        <li>hello</li>
+    </ul>
+    <ol>
+        <li>happy</li>
+    </ol>
+    
+    <div style="background-color: red;">
+        nksdfjlfdsj
+    </div>
+    <div class="f1" style="  opacity: 0.3; background-color: rgb(2, 4, 17);">
+        nkjbksdfnkjnsfnkj;sdfshhn
+    </div>
+    <div style="background-image: url(./images/result.jpeg); 
+        height: 409px;
+        width: 45%;
+        background-position: unset;
+        ">
+        <h1>jksahdkhd</h1>
+    
+    </div>
+
+
+
+
+</body>
