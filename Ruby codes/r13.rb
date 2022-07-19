@@ -1,4 +1,4 @@
-#!/usr/bin/ruby
+
 
 class Example
    VAR1 = 100
@@ -8,7 +8,5 @@ class Example
     
    end
 end
-
-# Create Objects
 object = Example.new()
 object.show
