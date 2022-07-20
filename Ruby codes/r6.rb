@@ -1,8 +1,8 @@
 $global_variable;
 class Customer
-    def g1()
+def g1()
         puts "global variable in customer is #$global_variable"
-    end
+end
 end
 class Customer2
  def g2()
